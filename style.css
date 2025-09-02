@@ -1,0 +1,295 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sign-frase {
+    left: 12%;
+    position: relative;
+    top: 38%;
+    height: 100px;
+}
+
+button {
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: 0.5s ease-in-out;
+}
+
+button:active {
+    opacity: 0.4;
+    transition: 0.1s ease-in-out;
+}
+
+.modelo-unha {
+    margin-bottom: 95%;
+    position: relative;
+    left: 35%;
+    opacity: 0.7;
+    height: 250px;
+}
+
+body {
+    height: 100vh;
+}
+
+.caixa-1 {
+    width: 40%;
+}
+
+.caixa-img {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.caixa-img img {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.caixa-mae {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+    height: 100vh;
+}
+
+.sombra {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(8, 9, 10, 0.99) 5%,
+            rgba(10, 12, 16, 0.7) 70%,
+            rgba(8, 9, 10, 0.99) 95%);
+    position: fixed;
+    top: 0;
+}
+
+p {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.link-whatsapp img {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+.header img {
+    height: 80px;
+}
+
+.header a {
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: #737373;
+    font-size: 25px;
+    transition: 0.5s ease-in-out;
+}
+
+.formulario {
+    background-color: #ffffff;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -300px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: left 1s ease-in-out;
+}
+
+.formulario button:hover {
+    background-color: #808080;
+    color: #000000;
+    font-weight: bold;
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #808080;
+    padding-left: 5px;
+    outline-color: #000000;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #808080;
+    padding-left: 5px;
+    outline-color: #000000;
+}
+
+.sombra-2 {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%,
+            rgba(10, 12, 16, 0.7) 50%,
+            rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+
+.mobile {
+    display: none;
+}
+
+.tabela {
+    min-height: 100%;
+    min-width: 100%;
+    position: relative;
+    top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    background-color: #000000;
+}
+
+.tabela-mobile {
+    display: none;
+}
+
+@media(max-width: 1100px) {
+
+   .caixa-1 p {
+        top: 35%;
+        left: 2px;
+        position: absolute;
+        text-align:left;
+        font-size: 15px;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .caixa-mae {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 15px;
+    }
+
+    .modelo-unha {
+        position: relative;
+        display: flex;
+        top: 55vh;
+        left: 5px;
+        width: 36vw;
+        height: auto;
+        opacity: 1;
+    }
+
+    .header {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50px;
+    }
+
+    .header img {
+        display: 5px;
+    }
+
+    .header a {
+        font-size: 110%;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .header a:hover {
+        font-size: 20px;
+    }
+
+    .formulario {
+        transform: translateX(-37%);
+    }
+
+    button {
+        top: 420px;
+        position: relative;
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+        height: 50px;
+    }
+
+    .sign-frase {
+        left: -4%;
+        position: relative;
+        top: 17%;   
+        height: 65px;
+    }
+
+    .link-whatsapp img {
+        height: 50px;
+        right: 5px;
+        bottom: 20px;
+        margin-bottom: -1%;
+    }
+
+    .mobile {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .tabela {
+        display: none;
+    }
+
+    .tabela-mobile {
+        display:flex;
+        border: none;
+        margin-right: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 86%;
+    }
+
+     body {
+            background-color: #000000;
+        }
+
+}
