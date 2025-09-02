@@ -190,7 +190,7 @@ body {
 @media(max-width: 1100px) {
 
    .caixa-1 p {
-        top: 35%;
+        top: 25%;
         left: 2px;
         position: absolute;
         text-align:left;
@@ -209,7 +209,7 @@ body {
         position: relative;
         display: flex;
         top: 55vh;
-        left: 5px;
+        left: -8px;
         width: 36vw;
         height: auto;
         opacity: 1;
@@ -241,18 +241,15 @@ body {
         transform: translateX(-37%);
     }
 
-    .sign-frase {
-        left: -4%;
-        position: relative;
-        top: 17%;   
-        height: 65px;
-    }
-
     .link-whatsapp img {
         height: 50px;
-        right: 5px;
+        right: 30px;
         bottom: 20px;
-        margin-bottom: -1%;
+        margin-bottom: 5px;
+    }
+
+    .sign-frase {
+        display: none;
     }
 
     .mobile {
@@ -277,6 +274,13 @@ body {
         top: 0;
         left: 0;
         height: 86%;
+    }
+
+    .button-ctt {
+        position: relative;
+        top: 50vh;
+        right: 23px;
+        z-index: 1;
     }
 
      body {
